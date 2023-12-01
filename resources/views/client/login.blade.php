@@ -12,10 +12,6 @@
                         <fieldset class="p-4">
                             <input class="form-control mb-3" name="username" type="text" placeholder="Tên đăng nhập" required>
                             <input class="form-control mb-3" name="password" type="password" placeholder="Mật khẩu" required>
-                            <div class="loggedin-forgot">
-                                <input type="checkbox" id="keep-me-logged-in">
-                                <label for="keep-me-logged-in" class="pt-3 pb-2">Ghi nhớ đăng nhập</label>
-                            </div>
                             <button type="submit" class="btn btn-primary font-weight-bold mt-3 form-control mb-3">Đăng nhập</button>
                             <a class="mt-3 d-block text-primary" href="{{route('forget.password.get')}}">Quên mật khẩu?</a>
 

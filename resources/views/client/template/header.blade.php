@@ -16,7 +16,7 @@
                                 <a class="nav-link" href="/">Home</a>
                             </li>
                             <li class="nav-item dropdown dropdown-slide @@dashboard">
-                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#!">Dashboard<span><i class="fa fa-angle-down"></i></span>
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#!">Thông tin thêm<span><i class="fa fa-angle-down"></i></span>
                                 </a>
 
                                 <!-- Dropdown list -->
@@ -45,12 +45,6 @@
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item @@about" href="about-us.html">About Us</a></li>
                                     <li><a class="dropdown-item @@contact" href="contact-us.html">Contact Us</a></li>
-                                    <li><a class="dropdown-item @@profile" href="user-profile.html">User Profile</a></li>
-                                    <li><a class="dropdown-item @@404" href="404.html">404 Page</a></li>
-                                    <li><a class="dropdown-item @@package" href="package.html">Package</a></li>
-                                    <li><a class="dropdown-item @@singlePage" href="single.html">Single Page</a></li>
-                                    <li><a class="dropdown-item @@store" href="store.html">Store Single</a></li>
-                                    <li><a class="dropdown-item @@blog" href="blog.html">Blog</a></li>
                                     <li><a class="dropdown-item @@singleBlog" href="single-blog.html">Blog Details</a></li>
                                     <li><a class="dropdown-item @@terms" href="terms-condition.html">Terms &amp; Conditions</a></li>
                                 </ul>
@@ -91,15 +85,6 @@
                                         <li><a class="dropdown-item @@category" href="">Thông tin các nhân</a></li>
                                         <li><a class="dropdown-item @@listView" href="">Đơn ứng tuyển</a></li>
                                         <li><a class="dropdown-item @@listView" href="{{route('logout')}}">Đăng xuất</a></li>
-
-{{--                                        <li class="dropdown dropdown-submenu dropleft">--}}
-{{--                                            <a class="dropdown-item dropdown-toggle" href="#!" id="dropdown0201" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub Menu</a>--}}
-
-{{--                                            <ul class="dropdown-menu" aria-labelledby="dropdown0201">--}}
-{{--                                                <li><a class="dropdown-item" href="master.blade.php">Submenu 01</a></li>--}}
-{{--                                                <li><a class="dropdown-item" href="master.blade.php">Submenu 02</a></li>--}}
-{{--                                            </ul>--}}
-{{--                                        </li>--}}
                                     </ul>
                                 </li>
                                 </li>

@@ -39,11 +39,8 @@ class ForgotPasswordController extends Controller
      */
 
     public function showForgetPasswordForm()
-
     {
-
         return view('client.auth.forgetPassword', ['title' => 'Đặt lại mật khẩu']);
-
     }
 
 
@@ -92,10 +89,6 @@ class ForgotPasswordController extends Controller
             $message->subject('Đặt lại mật khẩu!');
         });
 
-
-
-
-
         return back()->with('message', "Thông tin đặt lại mật khẩu đã được gửi tới email $mailReplace!");
 
     }
@@ -111,9 +104,7 @@ class ForgotPasswordController extends Controller
      */
 
     public function showResetPasswordForm($token) {
-
         return view('client.auth.forgetPasswordLink', ['token' => $token, 'title' => 'Đặt lại mật khẩu']);
-
     }
 
 
