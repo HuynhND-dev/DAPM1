@@ -36,7 +36,7 @@ class AuthController extends Controller
                 return redirect()->route('index');
             }
         } else {
-            return redirect("login")->with('errors','Sai tên đăng nhập hoặc mật khẩu');
+            return redirect("login")->with('error','Sai tên đăng nhập hoặc mật khẩu');
         }
     }
 
@@ -50,13 +50,17 @@ class AuthController extends Controller
         $request->validate([
             'username' => 'required|max:255|min:3|unique:users,username',
             'password' => 'max:255|confirmed',
-            'email' => 'required|max:255|min:5',
-            'avata' => 'image|mimes:png,jpg,jpeg|max:2048',
-            'phone' => 'required|max:999999999999999|min:0|numeric',
+            'email' => 'required|max:255|min:5|unique:users,email',
+            'phone' => 'required|max:999999999999999|min:99999999|numeric',
         ],[
-            'password.confirmed' => 'Xac nhan mat khau khong trung khop!',
-            'password.min' => 'Do dai mat khau qua ngan!',
-            'avata' => 'Chi duoc tai HINH ANH'
+            'username.required' => 'Tên đăng nhập không được để trống',
+            'username.min' => 'Tên đăng nhập ít nhất 3 ký tự',
+            'username.unique' => 'Tên đăng nhập đã có',
+            'password.confirmed' => 'Nhập lại mật khẩu không trùng khớp',
+            'password.min' => 'Mật khẩu quá ngắn',
+            'email.unique' => 'Email đã được đăng ký',
+            'phone.min' => 'Số điện thoại không hợp lệ',
+            'phone.numeric' => 'Số điện thoại không hợp lệ'
         ]);
 
         $user = new User;
@@ -72,7 +76,7 @@ class AuthController extends Controller
         if ($user) {
             return redirect()->intended('login')->withSuccess('Đăng ký thành công');
         }
-        return back()->withErrors('Dang ky that bai');
+        return back()->with('error','Đăng ký thất bại');
     }
 
 }

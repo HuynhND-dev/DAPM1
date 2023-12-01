@@ -7,7 +7,7 @@
                @include('admin.alert')
                 <div class="border">
                     <h3 class="bg-gray p-4">Đăng nhập</h3>
-                    <form action="/login" method="Post" class="form-group">
+                    <form action="/login" method="Post" class="form-group pb-2">
                         @csrf
                         <fieldset class="p-4">
                             <input class="form-control mb-3" name="username" type="text" placeholder="Tên đăng nhập" required>
@@ -16,11 +16,11 @@
                                 <input type="checkbox" id="keep-me-logged-in">
                                 <label for="keep-me-logged-in" class="pt-3 pb-2">Ghi nhớ đăng nhập</label>
                             </div>
-                            <button type="submit" class="btn btn-primary font-weight-bold mt-3">Đăng nhập</button>
-                            <a class="mt-3 d-block text-primary" href="#">Quên mật khẩu?</a>
+                            <button type="submit" class="btn btn-primary font-weight-bold mt-3 form-control mb-3">Đăng nhập</button>
+                            <a class="mt-3 d-block text-primary" href="{{route('forget.password.get')}}">Quên mật khẩu?</a>
 
                         </fieldset>
-                        <label for="registering"  class="px-2 pb-2 mb-2 pull-right">chưa có tài khoản? <a class="text-primary font-weight-bold" href="register">Đăng ký</a></label>
+                        <label for="registering"  class="px-2 pb-2 mb-2 pull-right">Chưa có tài khoản? <a class="text-primary font-weight-bold" href="register">Đăng ký</a></label>
                     </form>
                 </div>
             </div>

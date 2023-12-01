@@ -207,7 +207,7 @@
                 var username = this.value;
                 $.ajax({
                     url: "/get-username",
-                    type: "get",
+                    type: "post",
                     data: {
                         username: username,
                         _token: tokens,
@@ -231,7 +231,7 @@
                 $("#phone").on('keyup', function () {
                     var phone = this.value;
                     $.ajax({
-                        url: "get-phone",
+                        url: "/get-phone",
                         type: "POST",
                         data: {
                             phone: phone,
@@ -257,7 +257,7 @@
                 $("#email").on('keyup', function () {
                     var email = this.value;
                     $.ajax({
-                        url: "get-email",
+                        url: "/get-email",
                         type: "POST",
                         data: {
                             email: email,

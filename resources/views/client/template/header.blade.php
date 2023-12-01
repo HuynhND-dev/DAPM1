@@ -24,7 +24,7 @@
                                     <li><a class="dropdown-item @@dashboardPage" href="dashboard.html">Dashboard</a></li>
                                     <li><a class="dropdown-item @@dashboardMyAds" href="dashboard-my-ads.html">Dashboard My Ads</a></li>
                                     <li><a class="dropdown-item @@dashboardFavouriteAds" href="dashboard-favourite-ads.html">Dashboard Favourite Ads</a></li>
-                                    <li><a class="dropdown-item @@dashboardArchivedAds" href="dashboard-archived-ads.html">Dashboard Archived Ads</a></li>
+                                    <li><a class="dropdown-item @@das git remote add origin git@github.com:<username>/demo_app.githboardArchivedAds" href="dashboard-archived-ads.html">Dashboard Archived Ads</a></li>
                                     <li><a class="dropdown-item @@dashboardPendingAds" href="dashboard-pending-ads.html">Dashboard Pending Ads</a></li>
 
                                     <li class="dropdown dropdown-submenu dropright">

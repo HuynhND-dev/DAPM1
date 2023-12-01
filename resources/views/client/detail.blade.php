@@ -10,7 +10,7 @@
                 <!-- Left sidebar -->
                 <div class="col-lg-8">
                     <div class="product-details">
-                        <h1 class="product-title">{{$application[0]->name}}</h1>
+                        <h1 class="product-title" id="test">{{$application[0]->name}}</h1>
                         <div class="product-meta">
                             <ul class="list-inline">
                                 <li class="list-inline-item"><i class="fa fa-user-o"></i> By: <a href="user-profile.html">{{$employer[0]->name}}</a></li>
@@ -168,7 +168,7 @@
                                 echo $formattedDateTime;
                                 ?>
                             </p>
-                            <a href="single.html">See all ads</a>
+                            <a href="#test">See all ads</a>
                             <ul class="list-inline mt-20">
                                 <li class="list-inline-item"><a href="contact-us.html" class="btn btn-contact d-inline-block  btn-primary px-lg-4 my-2 px-md-4">Liên hệ</a></li>
                                 <li class="list-inline-item" id="btnApply">
